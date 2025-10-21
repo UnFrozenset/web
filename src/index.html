@@ -3,56 +3,272 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="assets/icons/logo.ico" type="image/png">
-    <title>Index</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Index</title>
 </head>
 
 <body>
-<header class="bread">
-    <img src="assets/icons/logo.ico">
-    <a href="index.html">Главная</a>
-    <a href="contacts.html">Контакты</a>
-    <hr>
+<header class="head">
+    <p>IT WEBSITE</p>
+    <nav class="links">
+        <ul>
+            <li>Services</li>
+            <li>Media</li>
+            <li>Cases</li>
+            <li>FAQ</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+    <nav class="contacts">
+        <ul>
+            <li><img src="assets/icons/phone_blue.ico"> +7 (111) 111 11 11</li>
+            <li>+7 (111) 111 11 11</li>
+            <li><img src="assets/icons/email_blue.ico"> itcompany@mail.com</li>
+        </ul>
+    </nav>
 </header>
+<hr>
 
-<h1 class="b">Произвольный текст заголовка</h1>
-<p class="a">Параграф с произвольным текстом</p>
+<section class="info">
+    <div>
+        <h1>Development of mobile applications and web services of any complexity</h1>
+        <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of your
+            customers' devices</p>
+    </div>
+    <section class="cont-form">
+        <h2>Leave your contacts and we will call you back within 30 minutes</h2>
+        <form class="cont-info">
+            <label for="cont-phone">phone number</label>
+            <input type="number" id="cont-phone" placeholder="+7 (111) 111-11-11">
 
-<h3 class="d">Заголовок с меньшим уровнем</h3>
+            <label for="cont-full-name">full name</label>
+            <input placeholder="Иванов Иван" id="cont-full-name">
 
-<h4 class="e">Ещё более мелкий заголовок</h4>
-<p class="a">Очень большой произвольный текст, состоящий из очень большого количества слов, невозможное количество слов
-    встречается здесь</p>
+            <button type="submit">Get consultation</button>
+        </form>
+    </section>
+</section>
+<hr>
 
-<h3 class="d">Заголовок чуть побольше</h3>
-<p class="a">Снова очень большой текст, но чуть поменьше чем предыдущий</p>
+<section class="technologies">
+    <div class="using-tech">
+        <h2>Full development cycle</h2>
+        <p>We use proven technologies</p>
+        <article>
+            <h3>Web</h3>
+            <p>PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js/ Nuxt / MySQL / Laravel / GO lang / django /
+                Python</p>
+        </article>
+        <article>
+            <h3>Mobile</h3>
+            <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit
+                Test / Navigation</p>
+        </article>
+    </div>
+
+    <ul class="tech-links">
+        <li>iOS development</li>
+        <li>Android development</li>
+        <li>Web development</li>
+        <li>UI/UX design</li>
+        <li>Testing</li>
+        <li>Launch</li>
+        <li>IT consulting</li>
+    </ul>
+</section>
+<hr>
+
+<section class="industries">
+    <h1>Developed more than 100 projects in 15 industries</h1>
+    <table>
+        <tr>>
+            <td><img src="assets/icons/social_media.ico">Social media</td>
+            <td><img src="assets/icons/education.ico">Education</td>
+            <td><img src="assets/icons/ar.ico">AR technology</td>
+        </tr>
+        <tr>
+            <td><img src="assets/icons/sport.ico">Fitness and sport</td>
+            <td><img src="assets/icons/transport.ico">Auto, transport</td>
+            <td><img src="assets/icons/tv.ico">TV series</td>
+        </tr>
+        <tr>
+            <td><img src="assets/icons/bank.ico">Bank</td>
+            <td><img src="assets/icons/medicine.ico">Medicine, health</td>
+            <td><img src="assets/icons/startup.ico">Startups</td>
+        </tr>
+        <tr>
+            <td><img src="assets/icons/construction.ico">Construction</td>
+            <td><img src="assets/icons/food.ico">Restaurants, food delivery</td>
+            <td><img src="assets/icons/religion.ico">Religion</td>
+        </tr>
+        <tr>
+            <td><img src="assets/icons/games.ico">Game projects</td>
+            <td><img src="assets/icons/marketplace.ico">Marketplaces</td>
+            <td><img src="assets/icons/online_courses.ico">Online cources</td>
+        </tr>
+    </table>
+</section>
+<hr>
+
+<section class="projects">
+    <h1>Projects we are proud of</h1>
+    <p>Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a
+        long-term partnership</p>
+    <ul>
+        <li>I-teka</li>
+        <li>Dauletten</li>
+        <li>Guru Bosch</li>
+        <li>Santo</li>
+        <li>Home Credit Bank</li>
+        <li>BI Partners</li>
+        <li>Europharma</li>
+        <li>
+            <button type="button">View 100 more projects</button>
+        </li>
+    </ul>
+    <article class="project">
+        <h2>I-teka</h2>
+        <p>The application is designed to search for drugs by availability in pharmacies in cities. During quarantine,
+            the application helped many people, which gives more value.</p>
+        <div>Business analysis / iOS / Android / QA / UI/UX Design</div>
+        <div>
+            <p><img src="assets/icons/geolocation_blue.ico">Kazakhstan</p>
+            <p><img src="assets/icons/medicine.ico">Medicine</p>
+        </div>
+        <div>
+            <p>400% User Growth</p>
+            <p>+ 200 000 Active Users</p>
+        </div>
+        <div>*links*</div>
+    </article>
+</section>
+<hr>
+
+<section class="discuss-form">
+    <h1>Let's discuss Your project</h1>
+    <p>Let's figure out how to create an effective application, its cost and terms of its development</p>
+    <form class="disc-info">
+        <label for="disc-phone">phone number</label>
+        <input type="number" id="disc-phone" placeholder="+7 (111) 111-11-11">
+
+        <label for="disc-name">full name</label>
+        <input placeholder="Иванов Иван" id="disc-name">
+
+        <button type="submit">Discuss the project</button>
+    </form>
+</section>
+<hr>
+
+<section class="dev-stgs">
+    <h1>Application Development Stages</h1>
+    <div>
+        <article>
+            <h3><img src="assets/icons/analysis.ico">Analysis</h3>
+            <p>We write technical specifications for development, taking into account the business processes and
+                technologies of the customer and the needs of users.</p>
+        </article>
+        <article>
+            <h3><img src="assets/icons/design.ico">Design</h3>
+            <p>We adapt the customer's corporate identity to the platform guidelines. We draw convenient and
+                understandable
+                interfaces.</p>
+        </article>
+        <article>
+            <h3><img src="assets/icons/development.ico">Development</h3>
+            <p>We create an extensible architecture, write clean and stable code. We integrate with customer
+                technologies.</p>
+        </article>
+        <article>
+            <h3><img src="assets/icons/testing.ico">Testing</h3>
+            <p>We carry out functional testing and do bug fixes. We adapt the application to different phone
+                resolutions</p>
+        </article>
+        <article>
+            <h3><img src="assets/icons/launching.ico">Launching</h3>
+            <p>We design the application page and publish it in the App Store and Google Play stores.</p>
+        </article>
+        <article>
+            <h3><img src="assets/icons/support.ico">Support</h3>
+            <p>We monitor the stability of the application, update it for new devices and versions of iOS and
+                Android.</p>
+        </article>
+    </div>
+</section>
+<hr>
+
+<section class="team">
+    <h1>Our team</h1>
+    <p>Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile
+        development.</p>
+    <div>
+        <p>28 team members</p>
+        <p>+100 projects</p>
+        <p>7 years in IT sphere</p>
+    </div>
+    <p>All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists in
+        the market. It's expensive but worth it</p>
+</section>
+<hr>
+
+<section class="booking-form">
+    <h1>Get the book for free by leaving your contacts</h1>
+    <form class="book-form">
+        <label for="book-phone">phone number</label>
+        <input type="number" id="book-phone" placeholder="+7 (111) 111-11-11">
+
+        <label for="book-name">full name</label>
+        <input placeholder="Иванов Иван" id="book-name">
+
+        <label for="book-mail">email</label>
+        <input placeholder="mail@mail.com" type="email" id="book-mail">
+
+        <button type="submit">Send me ebook to my mail</button>
+    </form>
+</section>
+<hr>
+
+<section class="faq">
+    <h1>FAQ</h1>
+    <ul>
+        <li>What is the cost of a mobile application?</li>
+        <li>Do you provide a guarantee for the mobile application?</li>
+        <li>How long will development take?</li>
+        <li>I will not tell my idea, do you guarantee confidentiality?</li>
+    </ul>
+</section>
 <hr>
 
 <footer>
-    <h3 class="d">Заголовок для подвала</h3>
-    <p class="a">Произвольный текст для подавала сайта, с небольшим количеством слов</p>
-    <hr>
-
-    <table border="1px" cellpadding="10px">
-        <caption>Контакты</caption>
-        <tr>
-            <th>ФИО</th>
-            <th>Номер</th>
-            <th>Почта</th>
-        </tr>
-        <tr>
-            <th>Иванов Иван Иванович</th>
-            <th>88005553535</th>
-            <th>IIIvanovich@pochta.com</th>
-        </tr>
-        <tr>
-            <th>Александров Александр Александрович</th>
-            <th>89123456789</th>
-            <th>AAAlexandrovich@pochta.com</th>
-        </tr>
-    </table>
-    <p class="a">Все права защищены. (нет)</p>
+    <h1>IT WEBSITE</h1>
+    <ul>
+        <li>
+            <div>
+                <p><img src="assets/icons/phone_grey.ico">Contact nums</p>
+                <p>+7 (778) 395 90 26</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <p><img src="assets/icons/email_grey.ico">Post</p>
+                <p>mail@mail.com</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <p><img src="assets/icons/geolocation_grey.ico">Adress</p>
+                <p>City city, steet st. 90</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <p><img src="assets/icons/document.ico">Leave a request</p>
+                <p>Leave a request</p>
+            </div>
+        </li>
+    </ul>
+    <p>We work throughout world</p>
 </footer>
 
 </body>

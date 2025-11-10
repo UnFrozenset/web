@@ -1,0 +1,33 @@
+.page-end {
+    background: #101828;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 220px;
+    margin-bottom: 48px;
+}
+
+.page-end ul {
+    width: 100%;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    row-gap: 12px;
+    margin-top: 0;
+}
+
+.page-end li{
+    height: 24px;
+}
+
+
+.page-end img {
+    margin-right: 8px;
+}
+
+.page-end li:nth-child(-n+4) {
+    color: #98A2B3;
+}

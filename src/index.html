@@ -11,7 +11,8 @@
 
 <body>
 <header class="head">
-    <p>IT WEBSITE</p>
+    <p class="mobile-menu"><img src="assets/icons/mobile-menu-icon.svg"></p>
+    <p class="logo"><img src="assets/icons/site_logo.svg"></p>
     <nav class="links">
         <ul>
             <li>Services</li>
@@ -21,34 +22,41 @@
             <li>Contacts</li>
         </ul>
     </nav>
-    <nav class="contacts">
+    <nav class="contacts blue">
         <ul>
-            <li><img src="assets/icons/phone_blue.ico"> +7 (111) 111 11 11</li>
+            <li><img src="assets/icons/phone_blue.svg"> +7 (111) 111 11 11</li>
             <li>+7 (111) 111 11 11</li>
-            <li><img src="assets/icons/email_blue.ico"> itcompany@mail.com</li>
+            <li><img src="assets/icons/email_blue.svg"> itcompany@mail.com</li>
         </ul>
     </nav>
 </header>
-<hr>
 
 <section class="info">
-    <div>
-        <h1>Development of mobile applications and web services of any complexity</h1>
-        <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of your
-            customers' devices</p>
+    <div class="info-text">
+        <div>
+            <h1>Development of <span class="blue">mobile applications</span> and <span class="blue">web services</span>
+                of any complexity</h1>
+            <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of your
+                customers' devices</p>
+        </div>
+        <section class="cont-form">
+            <h2>Leave your contacts and we will call you back within 30 minutes</h2>
+            <form class="cont-info">
+                <div class="input-div">
+                    <label for="cont-phone">Phone number</label>
+                    <input type="number" id="cont-phone" placeholder="+7 (111) 111-11-11">
+                </div>
+
+                <div class="input-div">
+                    <label for="cont-full-name">Full name</label>
+                    <input placeholder="Иванов Иван" id="cont-full-name">
+                </div>
+
+                <button type="submit">Get consultation</button>
+            </form>
+        </section>
     </div>
-    <section class="cont-form">
-        <h2>Leave your contacts and we will call you back within 30 minutes</h2>
-        <form class="cont-info">
-            <label for="cont-phone">phone number</label>
-            <input type="number" id="cont-phone" placeholder="+7 (111) 111-11-11">
-
-            <label for="cont-full-name">full name</label>
-            <input placeholder="Иванов Иван" id="cont-full-name">
-
-            <button type="submit">Get consultation</button>
-        </form>
-    </section>
+    <img src="assets/img/background_photos.svg">
 </section>
 <hr>
 
@@ -84,29 +92,29 @@
     <h1>Developed more than 100 projects in 15 industries</h1>
     <table>
         <tr>>
-            <td><img src="assets/icons/social_media.ico">Social media</td>
-            <td><img src="assets/icons/education.ico">Education</td>
-            <td><img src="assets/icons/ar.ico">AR technology</td>
+            <td><img src="assets/icons/social_media.svg">Social media</td>
+            <td><img src="assets/icons/education.svg">Education</td>
+            <td><img src="assets/icons/ar.svg">AR technology</td>
         </tr>
         <tr>
-            <td><img src="assets/icons/sport.ico">Fitness and sport</td>
-            <td><img src="assets/icons/transport.ico">Auto, transport</td>
-            <td><img src="assets/icons/tv.ico">TV series</td>
+            <td><img src="assets/icons/sport.svg">Fitness and sport</td>
+            <td><img src="assets/icons/transport.svg">Auto, transport</td>
+            <td><img src="assets/icons/tv.svg">TV series</td>
         </tr>
         <tr>
-            <td><img src="assets/icons/bank.ico">Bank</td>
-            <td><img src="assets/icons/medicine.ico">Medicine, health</td>
-            <td><img src="assets/icons/startup.ico">Startups</td>
+            <td><img src="assets/icons/bank.svg">Bank</td>
+            <td><img src="assets/icons/medicine.svg">Medicine, health</td>
+            <td><img src="assets/icons/startup.svg">Startups</td>
         </tr>
         <tr>
-            <td><img src="assets/icons/construction.ico">Construction</td>
-            <td><img src="assets/icons/food.ico">Restaurants, food delivery</td>
-            <td><img src="assets/icons/religion.ico">Religion</td>
+            <td><img src="assets/icons/construction.svg">Construction</td>
+            <td><img src="assets/icons/food.svg">Restaurants, food delivery</td>
+            <td><img src="assets/icons/religion.svg">Religion</td>
         </tr>
         <tr>
-            <td><img src="assets/icons/games.ico">Game projects</td>
-            <td><img src="assets/icons/marketplace.ico">Marketplaces</td>
-            <td><img src="assets/icons/online_courses.ico">Online cources</td>
+            <td><img src="assets/icons/games.svg">Game projects</td>
+            <td><img src="assets/icons/marketplace.svg">Marketplaces</td>
+            <td><img src="assets/icons/online_courses.svg">Online cources</td>
         </tr>
     </table>
 </section>
@@ -134,8 +142,8 @@
             the application helped many people, which gives more value.</p>
         <div>Business analysis / iOS / Android / QA / UI/UX Design</div>
         <div>
-            <p><img src="assets/icons/geolocation_blue.ico">Kazakhstan</p>
-            <p><img src="assets/icons/medicine.ico">Medicine</p>
+            <p><img src="assets/icons/geolocation_blue.svg">Kazakhstan</p>
+            <p><img src="assets/icons/medicine_ico.svg">Medicine</p>
         </div>
         <div>
             <p>400% User Growth</p>
@@ -165,32 +173,32 @@
     <h1>Application Development Stages</h1>
     <div>
         <article>
-            <h3><img src="assets/icons/analysis.ico">Analysis</h3>
+            <h3><img src="assets/icons/analysis.svg">Analysis</h3>
             <p>We write technical specifications for development, taking into account the business processes and
                 technologies of the customer and the needs of users.</p>
         </article>
         <article>
-            <h3><img src="assets/icons/design.ico">Design</h3>
+            <h3><img src="assets/icons/design.svg">Design</h3>
             <p>We adapt the customer's corporate identity to the platform guidelines. We draw convenient and
                 understandable
                 interfaces.</p>
         </article>
         <article>
-            <h3><img src="assets/icons/development.ico">Development</h3>
+            <h3><img src="assets/icons/development.svg">Development</h3>
             <p>We create an extensible architecture, write clean and stable code. We integrate with customer
                 technologies.</p>
         </article>
         <article>
-            <h3><img src="assets/icons/testing.ico">Testing</h3>
+            <h3><img src="assets/icons/testing.svg">Testing</h3>
             <p>We carry out functional testing and do bug fixes. We adapt the application to different phone
                 resolutions</p>
         </article>
         <article>
-            <h3><img src="assets/icons/launching.ico">Launching</h3>
+            <h3><img src="assets/icons/launching.svg">Launching</h3>
             <p>We design the application page and publish it in the App Store and Google Play stores.</p>
         </article>
         <article>
-            <h3><img src="assets/icons/support.ico">Support</h3>
+            <h3><img src="assets/icons/support.svg">Support</h3>
             <p>We monitor the stability of the application, update it for new devices and versions of iOS and
                 Android.</p>
         </article>
@@ -240,35 +248,19 @@
 </section>
 <hr>
 
-<footer>
+<footer class="page-end">
     <h1>IT WEBSITE</h1>
     <ul>
-        <li>
-            <div>
-                <p><img src="assets/icons/phone_grey.ico">Contact nums</p>
-                <p>+7 (778) 395 90 26</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p><img src="assets/icons/email_grey.ico">Post</p>
-                <p>mail@mail.com</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p><img src="assets/icons/geolocation_grey.ico">Adress</p>
-                <p>City city, steet st. 90</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p><img src="assets/icons/document.ico">Leave a request</p>
-                <p>Leave a request</p>
-            </div>
-        </li>
+        <li><p><img src="assets/icons/phone_grey.svg">Contact nums</p></li>
+        <li><p><img src="assets/icons/email_grey.svg">Post</p></li>
+        <li><p><img src="assets/icons/geolocation_grey.svg">Adress</p></li>
+        <li><p><img src="assets/icons/document_grey.svg">Leave a request</p></li>
+        <li><p>+7 (778) 395 90 26</p></li>
+        <li><p>mail@mail.com</p></li>
+        <li><p>City city, steet st. 90</p></li>
+        <li><p>Leave a request</p></li>
     </ul>
-    <p>We work throughout world</p>
+    <p><img src="assets/icons/country.svg">We work throughout world</p>
 </footer>
 
 </body>

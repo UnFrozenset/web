@@ -9,7 +9,6 @@
     border-radius: 12px;
     z-index: 1000;
     width: 90%;
-    gap: 80px;
     box-shadow: 0 1px 2px 0 grey;
 }
 
@@ -20,6 +19,10 @@
     gap: 24px;
 }
 
+.logo {
+    width: 120px;
+    height: 24px;
+}
 
 .links li,
 .contacts li {
@@ -28,13 +31,86 @@
     align-items: center;
 }
 
+.links a {
+    text-decoration: none;
+    color: black;
+}
 
 .contacts img {
     margin-right: 8px;
 }
 
 .mobile-menu {
-    width: 60px;
-    height: 40px;
     display: none;
+}
+
+@media screen and (max-width: 1235px) {
+    .links ul,
+    .contacts ul {
+        gap: 10px;
+    }
+
+    .links {
+        width: 300px;
+    }
+
+    .links ul {
+        padding-left: 10px;
+    }
+
+    .contacts ul {
+        padding-left: 10px;
+    }
+
+    .head {
+        margin-left: -60px;
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .links {
+        display: none;
+    }
+
+    .contacts .phone {
+        display: none;
+    }
+
+    .head {
+        width: 100%;
+        left: 0;
+        padding: 24px 32px;
+        height: 90px;
+        top: 16px;
+        margin: 0;
+    }
+
+    .mobile-menu {
+        width: 60px;
+        height: 40px;
+        display: flex;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contacts {
+        display: none;
+    }
+
+    .mobile-menu {
+        width: 40px;
+        height: 20px;
+    }
+
+    .head {
+        padding: 36px 16px;
+    }
 }

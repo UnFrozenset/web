@@ -4,6 +4,7 @@
 @import "./head.css";
 @import "./footer.css";
 @import "./info.css";
+@import "./mobile_menu.css";
 
 body {
     /*background: burlywood;*/

@@ -53,3 +53,69 @@
     border-radius: 8px;
     text-align: left;
 }
+
+@media screen and (max-width: 1023px) {
+    .info div {
+        width: 425px;
+    }
+
+    .cont-form {
+        width: 380px;
+        padding-bottom: 32px;
+    }
+
+    .cont-form h2 {
+        width: 296px;
+    }
+
+    .cont-info {
+        display: flex;
+        flex-direction: column;
+        width: 425px;
+        gap: 32px;
+    }
+
+    .input-div input {
+        width: 220px;
+    }
+
+    .cont-info button {
+        padding: 11px 24px;
+        width: 156px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .info {
+        width: 300px;
+        margin-left: -80px;
+    }
+
+    .info div {
+        width: 380px;
+    }
+
+    .cont-form {
+        width: 380px;
+        margin-top: 150px;
+        background: white;
+    }
+
+    .cont-info {
+        width: 200px;
+    }
+
+    .cont-info div {
+        width: 200px;
+    }
+
+    .info img {
+        position: relative;
+        width: 400px;
+        left: -430px;
+        margin-top: 370px;
+        z-index: -1;
+        object-fit: cover;
+    }
+}

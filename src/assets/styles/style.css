@@ -12,6 +12,7 @@ body {
     padding-right: 108px;
     padding-top: 24px;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .blue {

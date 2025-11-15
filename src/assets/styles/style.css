@@ -5,6 +5,7 @@
 @import "./footer.css";
 @import "./info.css";
 @import "./mobile_menu.css";
+@import "./technologies.css";
 
 body {
     /*background: burlywood;*/
@@ -17,4 +18,10 @@ body {
 
 .blue {
     color: blue;
+}
+
+hr {
+    position: absolute;
+    width: 100%;
+    left: 0;
 }

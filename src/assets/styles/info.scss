@@ -19,6 +19,7 @@
       border-radius: 10px;
       box-shadow: 0 0 10px 0 grey;
       padding: 10px 30px 30px 30px;
+      background: white;
 
       h2 {
         width: 500px;
@@ -47,8 +48,32 @@
     }
   }
 
-  img {
+  .background-container {
+    display: flex;
     width: 812px;
+    height: 900px;
+    z-index: -1;
+    margin-left: 120px;
+    gap: 10px;
+    overflow-y: clip;
+
+    .background-scroll {
+      width: 200px;
+      height: 200%;
+      transform: rotate(-12deg);
+
+      &.left-scroll {
+        animation: scrollUp 20s linear infinite;
+      }
+
+      &.right-scroll {
+        animation: scrollDown 20s linear infinite;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
   }
 
   @media screen and (max-width: 1023px) {
@@ -85,9 +110,9 @@
       }
     }
 
-    img {
+    .background-container {
       width: 400px;
-      height: 820px;
+      margin-left: 200px;
     }
   }
 
@@ -106,11 +131,29 @@
       }
     }
 
-    img {
+
+    .background-container {
       position: absolute;
-      height: 1100px;
-      z-index: -1;
-      top: 350px;
+      top: 372px;
+      width: 300px;
     }
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: rotate(-12deg) translateY(0);
+  }
+  100% {
+    transform: rotate(-12deg) translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: rotate(-12deg) translateY(-50%);
+  }
+  100% {
+    transform: rotate(-12deg) translateY(0);
   }
 }

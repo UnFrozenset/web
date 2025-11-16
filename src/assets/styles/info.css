@@ -18,6 +18,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px 0 grey;
   padding: 10px 30px 30px 30px;
+  background: white;
 }
 .info .info-text .cont-form h2 {
   width: 500px;
@@ -40,8 +41,28 @@
   border-radius: 8px;
   text-align: left;
 }
-.info img {
+.info .background-container {
+  display: flex;
   width: 812px;
+  height: 900px;
+  z-index: -1;
+  margin-left: 120px;
+  gap: 10px;
+  overflow-y: clip;
+}
+.info .background-container .background-scroll {
+  width: 200px;
+  height: 200%;
+  transform: rotate(-12deg);
+}
+.info .background-container .background-scroll.left-scroll {
+  animation: scrollUp 20s linear infinite;
+}
+.info .background-container .background-scroll.right-scroll {
+  animation: scrollDown 20s linear infinite;
+}
+.info .background-container .background-scroll img {
+  width: 100%;
 }
 @media screen and (max-width: 1023px) {
   .info {
@@ -70,9 +91,9 @@
     width: 156px;
     height: 40px;
   }
-  .info img {
+  .info .background-container {
     width: 400px;
-    height: 820px;
+    margin-left: 200px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -89,10 +110,26 @@
     margin-top: 150px;
     background: white;
   }
-  .info img {
+  .info .background-container {
     position: absolute;
-    height: 1100px;
-    z-index: -1;
-    top: 350px;
+    top: 372px;
+    width: 300px;
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: rotate(-12deg) translateY(0);
+  }
+  100% {
+    transform: rotate(-12deg) translateY(-50%);
+  }
+}
+@keyframes scrollDown {
+  0% {
+    transform: rotate(-12deg) translateY(-50%);
+  }
+  100% {
+    transform: rotate(-12deg) translateY(0);
   }
 }

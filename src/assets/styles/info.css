@@ -1,121 +1,98 @@
 .info {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-
-.info div {
-    width: 600px;
-    margin-top: 24px;
+.info .info-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  padding-top: 56px;
 }
-
-.cont-form {
-    width: 676px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 grey;
-    padding: 10px 30px 30px 30px;
+.info .info-text div {
+  width: 600px;
+  margin-top: 24px;
 }
-
-.cont-form h2 {
-    width: 500px;
+.info .info-text .cont-form {
+  width: 676px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 grey;
+  padding: 10px 30px 30px 30px;
 }
-
-
-.info-text {
-    display: flex;
-    flex-direction: column;
-    row-gap: 60px;
-    padding-top: 56px;
+.info .info-text .cont-form h2 {
+  width: 500px;
 }
-
-.cont-info {
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
+.info .info-text .cont-form .cont-info {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
 }
-
-.input-div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px
+.info .info-text .cont-form .cont-info .input-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
-
-.cont-info button {
-    padding: 11px 24px;
-    background: #2D66EE;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    text-align: left;
+.info .info-text .cont-form .cont-info button {
+  padding: 11px 24px;
+  background: #2D66EE;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
 }
-
 .info img {
-    width: 812px;
+  width: 812px;
 }
-
 @media screen and (max-width: 1023px) {
-    .info div {
-        width: 384px;
-    }
-
-    .cont-form {
-        width: 384px;
-        padding-bottom: 32px;
-    }
-
-    .cont-form h2 {
-        width: 296px;
-        font-size: 16px;
-    }
-
-    .cont-info {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .input-div input {
-        width: 220px;
-    }
-
-    .cont-info button {
-        padding: 11px 24px;
-        width: 156px;
-        height: 40px;
-    }
-
-    .info {
-        margin-left: -70px;
-    }
-
-    .info img {
-        width: 400px;
-        height: 820px;
-    }
+  .info {
+    margin-left: -70px;
+  }
+  .info .info-text div {
+    width: 384px;
+  }
+  .info .info-text .cont-form {
+    width: 384px;
+    padding-bottom: 32px;
+  }
+  .info .info-text .cont-form h2 {
+    width: 296px;
+    font-size: 16px;
+  }
+  .info .info-text .cont-form .cont-info {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .info .info-text .cont-form .cont-info .input-div input {
+    width: 220px;
+  }
+  .info .info-text .cont-form .cont-info button {
+    padding: 11px 24px;
+    width: 156px;
+    height: 40px;
+  }
+  .info img {
+    width: 400px;
+    height: 820px;
+  }
 }
-
 @media screen and (max-width: 767px) {
-    .info {
-        margin-left: 24px;
-        margin-right: 24px;
-        justify-content: center;
-    }
-
-    .info-text {
-        gap: 400px;
-    }
-
-    .cont-form {
-        width: 380px;
-        margin-top: 150px;
-        background: white;
-    }
-
-    .info img {
-        position: absolute;
-        height: 1100px;
-        z-index: -1;
-        top: 350px
-    }
+  .info {
+    margin-left: 24px;
+    margin-right: 24px;
+    justify-content: center;
+  }
+  .info .info-text {
+    gap: 400px;
+  }
+  .info .info-text .cont-form {
+    width: 380px;
+    margin-top: 150px;
+    background: white;
+  }
+  .info img {
+    position: absolute;
+    height: 1100px;
+    z-index: -1;
+    top: 350px;
+  }
 }

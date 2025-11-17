@@ -1,0 +1,64 @@
+.booking {
+  background: url("../img/discuss_background_noise.svg"), url("../img/discuss_background_text.svg") #2D66EE no-repeat center;
+  display: flex;
+  margin-top: 24px;
+  margin-left: -108px;
+  margin-right: -108px;
+  gap: 152px;
+  height: 600px;
+  padding: 80px 108px;
+}
+.booking .book {
+  align-self: center;
+}
+.booking h1 {
+  color: white;
+  font-size: 36px;
+}
+.booking .booking-text {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.booking .booking-text .book-form {
+  border-radius: 12px;
+  padding: 24px;
+  background: white;
+  height: 284px;
+  display: grid;
+  grid-template-areas: "phone name" "email email" "button button";
+  grid-template-columns: auto;
+  align-items: center;
+}
+.booking .booking-text .book-form .input-div {
+  width: 264px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.booking .booking-text .book-form .input-div input {
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.booking .booking-text .book-form .number-input {
+  grid-area: phone;
+}
+.booking .booking-text .book-form .name-input {
+  grid-area: name;
+}
+.booking .booking-text .book-form .email-input {
+  grid-area: email;
+  width: auto;
+}
+.booking .booking-text .book-form button {
+  grid-area: button;
+  padding: 12px 24px;
+  background: #2D66EE;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 224px;
+  height: 40px;
+  justify-self: end;
+}

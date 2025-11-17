@@ -1,0 +1,33 @@
+.faq {
+  margin-top: 80px;
+
+  .faq-list {
+    margin-top: 40px;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    li {
+      border-bottom: 1px solid #D0D5DD;
+      width: 580px;
+      height: 100px;
+      margin-left: -40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      position: relative;
+      font-weight: bold;
+      font-size: 18px;
+
+      &::after {
+        background-image: url("../icons/plus_sign.svg");
+        content: "";
+        position: absolute;
+        right: 0;
+        align-self: center;
+        width: 68px;
+        height: 68px;
+      }
+    }
+  }
+}

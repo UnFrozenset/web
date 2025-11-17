@@ -1,0 +1,54 @@
+.dev-stages {
+  margin-top: 80px;
+
+  .stages {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 440px;
+    row-gap: 24px;
+
+    article {
+      width: 392px;
+      height: 192px;
+      border-radius: 12px;
+      box-shadow: 0 1px 1px 0 grey;
+      padding: 24px;
+
+      h3 {
+        height: 48px;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+      }
+    }
+
+    .stage-analysis {
+      background: url("../img/stage_1.svg") no-repeat right;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .stage-dev {
+      background: url("../img/stage_2.svg") no-repeat right;
+    }
+
+    .stage-launch {
+      background: url("../img/stage_3.svg") no-repeat right;
+    }
+
+    .stage-design {
+      background: url("../img/stage_4.svg") no-repeat right;
+    }
+
+    .stage-testing {
+      background: url("../img/stage_5.svg") no-repeat right;
+    }
+
+    .stage-support {
+      background: url("../img/stage_6.svg") no-repeat right;
+    }
+  }
+}

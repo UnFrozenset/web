@@ -6,6 +6,12 @@
 @import "./info.css";
 @import "./mobile_menu.css";
 @import "./technologies.css";
+@import "./projects.css";
+@import "./discuss-form.css";
+@import "./dev-stages.css";
+@import "./team.css";
+@import "./booking.css";
+@import "./faq.css";
 
 body {
     /*background: burlywood;*/

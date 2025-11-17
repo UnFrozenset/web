@@ -1,0 +1,58 @@
+.discuss-form {
+  background: url("../img/discuss_background_noise.svg"), url("../img/discuss_background_text.svg") #2D66EE no-repeat center;
+  background-size: 100%;
+  height: 350px;
+  padding: 80px 108px;
+  display: flex;
+  color: white;
+  gap: 24px;
+  margin-left: -108px;
+  margin-right: -108px;
+  margin-top: 60px;
+
+  .discuss-text {
+    width: 600px;
+  }
+
+  .disc-info {
+    width: 600px;
+    border-radius: 12px;
+    padding: 24px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+
+    .disc-inputs {
+      display: flex;
+      gap: 24px;
+      color: #667085;
+      height: 80px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .input-div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 12px;
+      width: 254px;
+
+      input {
+        border: none;
+        border-bottom: 1px solid grey;
+      }
+    }
+
+    button {
+      padding: 12px 24px;
+      background: #2D66EE;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      width: 180px;
+      height: 40px;
+      align-self: flex-end;
+    }
+  }
+}

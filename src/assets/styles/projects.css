@@ -1,0 +1,84 @@
+.industries {
+  margin-bottom: 120px;
+}
+.industries h1 {
+  width: 600px;
+  font-size: 36px;
+}
+.industries .industries-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.industries .industries-list div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.projects .all-projects-info {
+  width: 600px;
+  margin-bottom: 40px;
+}
+.projects .projects-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+.projects .projects-list li {
+  width: auto;
+  padding: 16px;
+}
+.projects .projects-list button {
+  padding: 11px 24px;
+  background: #2D66EE;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  height: 40px;
+}
+.projects .projects-list :last-child {
+  margin-left: auto;
+}
+.projects .current-project {
+  display: flex;
+  gap: 24px;
+}
+.projects .current-project .project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.projects .current-project .project-info .project-name {
+  font-size: 36px;
+}
+.projects .current-project .project-info .place-work {
+  display: flex;
+  gap: 32px;
+}
+.projects .current-project .project-info .place-work p {
+  display: flex;
+  gap: 8px;
+}
+.projects .current-project .project-info .project-stats {
+  display: flex;
+  gap: 48px;
+  width: 252px;
+}
+.projects .current-project .project-info .project-stats h2 {
+  margin-bottom: 8px;
+}
+.projects .current-project .project-info .project-stats p {
+  font-size: 13px;
+  color: #667085;
+}
+.projects .current-project .project-info .project-stats .projects-user-growth {
+  width: 80px;
+}
+.projects .current-project .project-info .project-stats .projects-active-users {
+  width: 128px;
+}
+.projects .current-project .project-info .project-links {
+  width: 300px;
+  gap: 16px;
+}

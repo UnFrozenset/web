@@ -1,11 +1,15 @@
 .dev-stages {
   margin-top: 80px;
 }
+.dev-stages .dev-stages-head {
+  font-size: 32px;
+}
 .dev-stages .stages {
   margin-top: 32px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 440px;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 30%;
   row-gap: 24px;
 }
 .dev-stages .stages article {
@@ -27,18 +31,61 @@
 .dev-stages .stages .stage-analysis p {
   font-size: 14px;
 }
-.dev-stages .stages .stage-dev {
+.dev-stages .stages .stage-design {
   background: url("../img/stage_2.svg") no-repeat right;
 }
-.dev-stages .stages .stage-launch {
+.dev-stages .stages .stage-dev {
   background: url("../img/stage_3.svg") no-repeat right;
 }
-.dev-stages .stages .stage-design {
+.dev-stages .stages .stage-testing {
   background: url("../img/stage_4.svg") no-repeat right;
 }
-.dev-stages .stages .stage-testing {
+.dev-stages .stages .stage-launch {
   background: url("../img/stage_5.svg") no-repeat right;
 }
 .dev-stages .stages .stage-support {
   background: url("../img/stage_6.svg") no-repeat right;
+}
+@media screen and (max-width: 1240px) {
+  .dev-stages .stages {
+    column-gap: 128px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .dev-stages {
+    margin-top: 32px;
+  }
+  .dev-stages .dev-stages-head {
+    font-size: 28px;
+  }
+  .dev-stages .stages {
+    margin-top: 44px;
+    grid-auto-flow: row;
+    row-gap: 32px;
+  }
+  .dev-stages .stages article {
+    width: 680px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dev-stages .stages {
+    margin-top: 52px;
+    row-gap: 20px;
+    width: 392px;
+    padding-top: 24px;
+  }
+  .dev-stages .stages article {
+    width: 392px;
+    height: 216px;
+    padding-right: 160px;
+  }
+  .dev-stages .stages article p {
+    font-size: 14px;
+  }
+  .dev-stages .stages .stage-analysis {
+    padding-right: 80px;
+  }
+  .dev-stages .stages .stage-design {
+    padding-right: 120px;
+  }
 }

@@ -6,12 +6,18 @@
   display: flex;
   color: white;
   gap: 24px;
-  margin-left: -108px;
-  margin-right: -108px;
   margin-top: 60px;
+  width: 100vw;
+  margin-left: -108px;
 }
 .discuss-form .discuss-text {
   width: 600px;
+}
+.discuss-form .discuss-text h1 {
+  font-size: 36px;
+}
+.discuss-form .discuss-text p {
+  font-size: 15px;
 }
 .discuss-form .disc-info {
   width: 600px;
@@ -49,4 +55,55 @@
   width: 180px;
   height: 40px;
   align-self: flex-end;
+}
+@media screen and (max-width: 1240px) {
+  .discuss-form .disc-info {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .discuss-form {
+    padding: 20px 40px 32px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: -32px;
+  }
+  .discuss-form .discuss-text {
+    width: 350px;
+  }
+  .discuss-form .disc-info {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .discuss-form {
+    margin-top: 60px;
+    height: 668px;
+    gap: 128px;
+    padding: 32px 16px 50px;
+    margin-left: -16px;
+  }
+  .discuss-form .disc-info {
+    width: 392px;
+    height: 300px;
+    padding: 36px 18px;
+  }
+  .discuss-form .disc-info .disc-inputs {
+    flex-direction: column;
+  }
+  .discuss-form .disc-info .disc-inputs .input-div {
+    width: 360px;
+    height: 78px;
+  }
+  .discuss-form .disc-info .disc-inputs .input-div label {
+    font-size: 13px;
+  }
+  .discuss-form .disc-info .disc-inputs .input-div input {
+    font-size: 17px;
+  }
+  .discuss-form .disc-info button {
+    margin-top: 40px;
+    align-self: center;
+  }
 }

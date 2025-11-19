@@ -2,12 +2,12 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: 100px;
 }
 .info .info-text {
   display: flex;
   flex-direction: column;
   row-gap: 60px;
-  padding-top: 56px;
 }
 .info .info-text div {
   width: 600px;
@@ -46,6 +46,7 @@
   width: 812px;
   height: 900px;
   z-index: -1;
+  margin-top: -100px;
   margin-left: 120px;
   gap: 10px;
   overflow-y: clip;
@@ -66,7 +67,7 @@
 }
 @media screen and (max-width: 1023px) {
   .info {
-    margin-left: -70px;
+    margin-top: 80px;
   }
   .info .info-text div {
     width: 384px;
@@ -98,9 +99,8 @@
 }
 @media screen and (max-width: 767px) {
   .info {
-    margin-left: 24px;
-    margin-right: 24px;
     justify-content: center;
+    margin-top: 72px;
   }
   .info .info-text {
     gap: 400px;
@@ -112,7 +112,7 @@
   }
   .info .background-container {
     position: absolute;
-    top: 372px;
+    top: 480px;
     width: 300px;
   }
 }

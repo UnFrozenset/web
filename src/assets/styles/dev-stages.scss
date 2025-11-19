@@ -1,11 +1,16 @@
 .dev-stages {
   margin-top: 80px;
 
+  .dev-stages-head {
+    font-size: 32px;
+  }
+
   .stages {
     margin-top: 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 440px;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 30%;
     row-gap: 24px;
 
     article {
@@ -31,19 +36,19 @@
       }
     }
 
-    .stage-dev {
+    .stage-design {
       background: url("../img/stage_2.svg") no-repeat right;
     }
 
-    .stage-launch {
+    .stage-dev {
       background: url("../img/stage_3.svg") no-repeat right;
     }
 
-    .stage-design {
+    .stage-testing {
       background: url("../img/stage_4.svg") no-repeat right;
     }
 
-    .stage-testing {
+    .stage-launch {
       background: url("../img/stage_5.svg") no-repeat right;
     }
 
@@ -51,4 +56,56 @@
       background: url("../img/stage_6.svg") no-repeat right;
     }
   }
+
+  @media screen and (max-width: 1240px) {
+    .stages {
+      column-gap: 128px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-top: 32px;
+
+    .dev-stages-head {
+      font-size: 28px;
+    }
+
+    .stages {
+      margin-top: 44px;
+      grid-auto-flow: row;
+      row-gap: 32px;
+
+      article {
+        width: 680px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .stages {
+      margin-top: 52px;
+      row-gap: 20px;
+      width: 392px;
+      padding-top: 24px;
+
+      article {
+        width: 392px;
+        height: 216px;
+        padding-right: 160px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .stage-analysis {
+        padding-right: 80px;
+      }
+
+      .stage-design {
+        padding-right: 120px;
+      }
+    }
+  }
 }
+

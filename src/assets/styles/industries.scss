@@ -1,0 +1,35 @@
+.industries {
+  margin-bottom: 120px;
+
+  h1 {
+    width: 600px;
+    font-size: 36px;
+  }
+
+  .industries-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+
+    h1 {
+      font-size: 28px;
+      width: 380px;
+    }
+
+    .industries-list {
+      margin-top: 32px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+  }
+}

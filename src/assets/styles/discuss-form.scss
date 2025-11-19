@@ -6,12 +6,21 @@
   display: flex;
   color: white;
   gap: 24px;
-  margin-left: -108px;
-  margin-right: -108px;
   margin-top: 60px;
+  width: 100vw;
+  margin-left: -108px;
+
 
   .discuss-text {
     width: 600px;
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }
 
   .disc-info {
@@ -53,6 +62,62 @@
       width: 180px;
       height: 40px;
       align-self: flex-end;
+    }
+  }
+
+  @media screen and (max-width: 1240px) {
+    .disc-info {
+      width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 20px 40px 32px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: -32px;
+
+    .discuss-text {
+      width: 350px;
+    }
+
+    .disc-info {
+      width: 600px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    height: 668px;
+    gap: 128px;
+    padding: 32px 16px 50px;
+    margin-left: -16px;
+
+    .disc-info {
+      width: 392px;
+      height: 300px;
+      padding: 36px 18px;
+
+      .disc-inputs {
+        flex-direction: column;
+
+        .input-div {
+          width: 360px;
+          height: 78px;
+          label {
+            font-size: 13px;
+          }
+
+          input {
+            font-size: 17px;
+          }
+        }
+      }
+      button {
+        margin-top: 40px;
+        align-self: center;
+      }
     }
   }
 }

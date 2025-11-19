@@ -1,104 +1,186 @@
-.industries {
-  margin-bottom: 120px;
-
-  h1 {
-    width: 600px;
-    font-size: 36px;
-  }
-
-  .industries-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    div {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-  }
-}
-
 .projects {
+  display: grid;
+  grid-template-columns: 600px 600px;
+
+
   .all-projects-info {
+    grid-column: 1;
     width: 600px;
     margin-bottom: 40px;
   }
 
   .projects-list {
-    list-style-type: none;
+    grid-column: 1;
     display: flex;
-    padding: 0;
+    width: 800px;
 
-    li {
-      width: auto;
-      padding: 16px;
-    }
+    .all-projects-list {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
 
-    button {
-      padding: 11px 24px;
-      background: #2D66EE;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      width: 200px;
-      height: 40px;
-    }
-
-    :last-child {
-      margin-left: auto;
+      li {
+        width: auto;
+        padding: 16px;
+      }
     }
   }
 
-  .current-project {
+  button {
+    grid-column: 2;
+    justify-self: end;
+    padding: 11px 24px;
+    background: #2D66EE;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    align-self: center;
+  }
+
+
+  .project-info {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 40px;
+    width: 600px;
 
-    .project-info {
+    .project-name {
+      font-size: 36px;
+    }
+
+    .place-work {
       display: flex;
-      flex-direction: column;
-      gap: 40px;
+      gap: 32px;
 
-      .project-name {
-        font-size: 36px;
-      }
-
-      .place-work {
+      p {
         display: flex;
-        gap: 32px;
-
-        p {
-          display: flex;
-          gap: 8px;
-        }
-      }
-
-      .project-stats {
-        display: flex;
-        gap: 48px;
-        width: 252px;
-
-        h2 {
-          margin-bottom: 8px;
-        }
-
-        p {
-          font-size: 13px;
-          color: #667085;
-        }
-
-        .projects-user-growth {
-          width: 80px;
-        }
-
-        .projects-active-users {
-          width: 128px;
-        }
-      }
-
-      .project-links {
-        width: 300px;
-        gap: 16px;
+        gap: 8px;
       }
     }
+
+    .project-stats {
+      display: flex;
+      gap: 48px;
+      width: 252px;
+
+      h2 {
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 13px;
+        color: #667085;
+      }
+
+      .projects-user-growth {
+        width: 80px;
+      }
+
+      .projects-active-users {
+        width: 128px;
+      }
+    }
+
+    .project-links {
+      width: 300px;
+      gap: 16px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    grid-template-columns: 600px 400px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    button {
+      grid-row: 3;
+      align-self: start;
+      justify-self: start;
+      margin-top: 32px;
+    }
+
+    .project-info {
+      grid-column: 1;
+    }
+
+    .i-teka-project {
+      grid-column: 2;
+      grid-row: 3;
+      align-self: end;
+      margin-left: -200px;
+
+      img {
+        width: 368px;
+      }
+    }
+
+    .all-projects-info {
+      width: 465px;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .projects-list {
+
+      li {
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @media screen and (max-width: 839px) {
+    button {
+      margin-left: -150px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 400px;
+
+    .all-projects-info {
+      width: 400px;
+      margin: 0;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .projects-list {
+      margin-top: 32px;
+
+      .all-projects-list {
+        display: flex;
+        width: 390px;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        li {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .project-info {
+    width: 400px;
+  }
+
+  .i-teka-project {
+    grid-column: 1;
+    margin: 0;
+  }
+
+  button {
+    width: 260px;
+    margin: 32px 0 0;
+    grid-row: 999;
+    grid-column: 1 / 2;
+    justify-self: center;
   }
 }

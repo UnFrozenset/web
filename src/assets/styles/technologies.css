@@ -12,6 +12,9 @@
   width: 600px;
   height: 104px;
 }
+.technologies .using-tech .tech-info .tech-info-cycle {
+  font-size: 36px;
+}
 .technologies .using-tech .tech-info p {
   margin-top: 32px;
 }
@@ -65,12 +68,14 @@
   .technologies {
     margin-top: 32px;
     column-gap: 100px;
-    margin-left: -70px;
   }
   .technologies .using-tech .tech-info {
     width: 320px;
     height: 68px;
     margin-bottom: 52px;
+  }
+  .technologies .using-tech .tech-info .tech-info-cycle {
+    font-size: 28px;
   }
   .technologies .using-tech .web-tech,
   .technologies .using-tech .mobile-tech {

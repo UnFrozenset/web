@@ -6,8 +6,8 @@
   align-items: center;
   color: white;
   height: 220px;
-  margin-bottom: 48px;
   margin-top: 52px;
+  margin-bottom: 48px;
 }
 .page-end ul {
   width: 100%;
@@ -31,13 +31,12 @@
   .page-end {
     position: absolute;
     width: 100%;
-    margin-left: -108px;
+    left: 0;
   }
 }
 @media screen and (max-width: 767px) {
   .page-end {
     height: 352px;
-    margin-bottom: 0;
   }
   .page-end p {
     margin-bottom: 32px;

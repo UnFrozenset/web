@@ -6,6 +6,7 @@
 @import "./info.css";
 @import "./mobile_menu.css";
 @import "./technologies.css";
+@import "./industries.css";
 @import "./projects.css";
 @import "./discuss-form.css";
 @import "./dev-stages.css";
@@ -15,9 +16,9 @@
 
 body {
     /*background: burlywood;*/
-    padding-left: 108px;
-    padding-right: 108px;
     padding-top: 24px;
+    padding-right: 108px;
+    padding-left: 108px;
     margin: 0;
     overflow-x: hidden;
 }
@@ -30,4 +31,21 @@ hr {
     position: absolute;
     width: 100%;
     left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    body {
+        padding-top: 16px;
+        padding-right: 0;
+        padding-left: 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        padding-top: 20px;
+        padding-right: 0;
+        padding-left: 16px;
+    }
 }

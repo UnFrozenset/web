@@ -8,7 +8,7 @@
   padding: 16px 24px;
   border-radius: 12px;
   z-index: 1000;
-  width: 90%;
+  width: 1124px;
   box-shadow: 0 1px 2px 0 grey;
 }
 .head .links ul,
@@ -37,15 +37,15 @@
 .head .mobile-menu {
   display: none;
 }
-@media screen and (max-width: 1235px) {
+@media screen and (max-width: 1240px) {
   .head {
     width: 95%;
-    margin-left: -60px;
+    margin-left: -70px;
   }
   .head .links ul,
   .head .contacts ul {
-    gap: 10px;
-    padding-left: 10px;
+    gap: 8px;
+    padding-left: 4px;
   }
   .head .links {
     width: 300px;
@@ -53,8 +53,9 @@
 }
 @media screen and (max-width: 1023px) {
   .head {
-    width: 100%;
-    left: 0;
+    width: calc(100% - 8px);
+    left: 4px;
+    right: 4px;
     padding: 24px 32px;
     height: 90px;
     top: 16px;
@@ -80,6 +81,9 @@
 @media screen and (max-width: 767px) {
   .head {
     padding: 36px 16px;
+    width: calc(100% - 16px);
+    left: 8px;
+    right: 8px;
   }
   .head .contacts {
     display: none;

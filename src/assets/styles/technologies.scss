@@ -12,6 +12,9 @@
       width: 600px;
       height: 104px;
 
+      .tech-info-cycle {
+        font-size: 36px;
+      }
       p {
         margin-top: 32px;
       }
@@ -72,13 +75,16 @@
   @media screen and (max-width: 1023px) {
     margin-top: 32px;
     column-gap: 100px;
-    margin-left: -70px;
 
     .using-tech {
       .tech-info {
         width: 320px;
         height: 68px;
         margin-bottom: 52px;
+
+        .tech-info-cycle {
+          font-size: 28px;
+        }
       }
 
       .web-tech,

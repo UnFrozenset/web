@@ -6,8 +6,8 @@
   align-items: center;
   color: white;
   height: 220px;
-  margin-bottom: 48px;
   margin-top: 52px;
+  margin-bottom: 48px;
 
   ul {
     width: 100%;
@@ -34,12 +34,11 @@
   @media screen and (max-width: 1023px) {
     position: absolute;
     width: 100%;
-    margin-left: -108px;
+    left: 0;
   }
 
   @media screen and (max-width: 767px) {
     height: 352px;
-    margin-bottom: 0;
 
     p {
       margin-bottom: 32px;

@@ -103,7 +103,7 @@
 <section class="technologies">
     <div class="using-tech">
         <div class="tech-info">
-            <h2>Full development cycle</h2>
+            <h2 class="tech-info-cycle">Full development cycle</h2>
             <p>We use proven technologies</p>
         </div>
         <article class="web-tech">
@@ -159,7 +159,7 @@
     </div>
 
     <div class="projects-list">
-        <ul class="projects-list">
+        <ul class="all-projects-list">
             <li>I-teka</li>
             <li>Dauletten</li>
             <li>Guru Bosch</li>
@@ -168,38 +168,38 @@
             <li>BI Partners</li>
             <li>Europharma</li>
         </ul>
-        <button type="button">View 100 more projects</button>
     </div>
+    <button type="button">View 100 more projects</button>
 
-    <article class="current-project">
-        <div class="project-info">
-            <div><h2 class="project-name">I-teka</h2>
-                <p class="project-description">The application is designed to search for drugs by availability in
-                    pharmacies in cities. During quarantine, the application helped many people, which gives more
-                    value.</p>
+    <!--    <article class="current-project">-->
+    <div class="project-info">
+        <div><h2 class="project-name">I-teka</h2>
+            <p class="project-description">The application is designed to search for drugs by availability in
+                pharmacies in cities. During quarantine, the application helped many people, which gives more
+                value.</p>
+        </div>
+        <div>Business analysis / iOS / Android / QA / UI/UX Design</div>
+        <div class="place-work">
+            <p><img src="assets/icons/geolocation_blue.svg" alt="place">Kazakhstan</p>
+            <p><img src="assets/icons/medicine_ico.svg" alt="medicine">Medicine</p>
+        </div>
+        <div class="project-stats">
+            <div class="projects-user-growth">
+                <h2>400%</h2>
+                <p>User Growth</p>
             </div>
-            <div>Business analysis / iOS / Android / QA / UI/UX Design</div>
-            <div class="place-work">
-                <p><img src="assets/icons/geolocation_blue.svg" alt="place">Kazakhstan</p>
-                <p><img src="assets/icons/medicine_ico.svg" alt="medicine">Medicine</p>
-            </div>
-            <div class="project-stats">
-                <div class="projects-user-growth">
-                    <h2>400%</h2>
-                    <p>User Growth</p>
-                </div>
-                <div class="projects-active-users">
-                    <h2>+ 200 000</h2>
-                    <p>Active Users</p>
-                </div>
-            </div>
-            <div class="project-links">
-                <a href="#"><img src="assets/icons/ios_link.svg" alt="ios"></a>
-                <a href="#"><img src="assets/icons/android_link.svg" alt="android"></a>
+            <div class="projects-active-users">
+                <h2>+ 200 000</h2>
+                <p>Active Users</p>
             </div>
         </div>
-        <img src="assets/img/project_iteka.svg" alt="i-teka_project">
-    </article>
+        <div class="project-links">
+            <a href="#"><img src="assets/icons/ios_link.svg" alt="ios"></a>
+            <a href="#"><img src="assets/icons/android_link.svg" alt="android"></a>
+        </div>
+    </div>
+    <p class="i-teka-project"><img src="assets/img/project_iteka.svg" alt="i-teka_project"></p>
+    <!--    </article>-->
 </section>
 
 <section class="discuss-form">
@@ -222,10 +222,9 @@
         <button type="submit">Discuss the project</button>
     </form>
 </section>
-<hr>
 
 <section class="dev-stages">
-    <h1>Application Development Stages</h1>
+    <h1 class="dev-stages-head">Application Development Stages</h1>
     <div class="stages">
         <article class="stage-analysis">
             <h3><img src="assets/icons/analysis.svg" alt="analysis">Analysis</h3>
@@ -262,54 +261,54 @@
 <hr>
 
 <section class="team">
-    <div class="team-about">
-        <h1>Our team</h1>
-        <p>Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile
-            development.</p>
-        <div class="team-info">
-            <div>
-                <h2>28</h2>
-                <p>team members</p>
-            </div>
-            <div>
-                <h2>+100</h2>
-                <p>projects</p>
-            </div>
-            <div>
-                <h2> years</h2>
-                <p>in IT sphere</p>
-            </div>
+    <!--    <div class="team-about">-->
+    <h1>Our team</h1>
+    <p class="company-description">Thousand is a full-cycle digital production company with its own product
+        analytics,
+        design, web and mobile development.</p>
+    <div class="team-info">
+        <div>
+            <h2>28</h2>
+            <p>team members</p>
         </div>
-        <p>All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists
-            in
-            the market. It's expensive but worth it</p>
+        <div>
+            <h2>+100</h2>
+            <p>projects</p>
+        </div>
+        <div>
+            <h2>7 years</h2>
+            <p>in IT sphere</p>
+        </div>
     </div>
-    <p><img src="assets/img/team.svg" alt="team"></p>
+    <p class="team-description">All the necessary specialists - from a designer to a tester - are on our staff. We
+        hire the best specialists in the market. It's expensive but worth it</p>
+    <!--    </div>-->
+    <p class="team-photo"><img src="assets/img/team.svg" alt="team"></p>
 </section>
 <hr>
 
 <section class="booking">
-    <div class="booking-text">
-        <h1>Get the book for free by leaving your contacts</h1>
-        <form class="book-form">
-            <div class="input-div number-input">
-                <label for="book-phone">phone number</label>
-                <input type="number" id="book-phone" placeholder="+7 (111) 111-11-11">
-            </div>
+    <!--    <div class="booking-text">-->
+    <h1 class="leave-contacts">Get the book for free by leaving your contacts</h1>
+    <form class="book-form">
+        <div class="input-div number-input">
+            <label for="book-phone">phone number</label>
+            <input type="number" id="book-phone" placeholder="+7 (111) 111-11-11">
+        </div>
 
-            <div class="input-div name-input">
-                <label for="book-name">full name</label>
-                <input placeholder="Иванов Иван" id="book-name">
-            </div>
+        <div class="input-div name-input">
+            <label for="book-name">full name</label>
+            <input placeholder="Иванов Иван" id="book-name">
+        </div>
 
-            <div class="input-div email-input">
-                <label for="book-mail">email</label>
-                <input placeholder="mail@mail.com" type="email" id="book-mail">
-            </div>
+        <div class="input-div email-input">
+            <label for="book-mail">email</label>
+            <input placeholder="mail@mail.com" type="email" id="book-mail">
+        </div>
 
-            <button type="submit">Send me ebook to my mail</button>
-        </form>
-    </div>
+        <button type="submit">Send me ebook to my mail</button>
+    </form>
+    <!--    </div>-->
     <p class="book"><img src="assets/img/book.svg" alt="book"></p>
 </section>
 <hr>

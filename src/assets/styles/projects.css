@@ -1,34 +1,29 @@
-.industries {
-  margin-bottom: 120px;
-}
-.industries h1 {
-  width: 600px;
-  font-size: 36px;
-}
-.industries .industries-list {
+.projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 600px 600px;
 }
-.industries .industries-list div {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .projects .all-projects-info {
+  grid-column: 1;
   width: 600px;
   margin-bottom: 40px;
 }
 .projects .projects-list {
+  grid-column: 1;
+  display: flex;
+  width: 800px;
+}
+.projects .projects-list .all-projects-list {
   list-style-type: none;
   display: flex;
   padding: 0;
 }
-.projects .projects-list li {
+.projects .projects-list .all-projects-list li {
   width: auto;
   padding: 16px;
 }
-.projects .projects-list button {
+.projects button {
+  grid-column: 2;
+  justify-self: end;
   padding: 11px 24px;
   background: #2D66EE;
   color: white;
@@ -36,49 +31,122 @@
   border-radius: 8px;
   width: 200px;
   height: 40px;
+  align-self: center;
 }
-.projects .projects-list :last-child {
-  margin-left: auto;
-}
-.projects .current-project {
-  display: flex;
-  gap: 24px;
-}
-.projects .current-project .project-info {
+.projects .project-info {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 600px;
 }
-.projects .current-project .project-info .project-name {
+.projects .project-info .project-name {
   font-size: 36px;
 }
-.projects .current-project .project-info .place-work {
+.projects .project-info .place-work {
   display: flex;
   gap: 32px;
 }
-.projects .current-project .project-info .place-work p {
+.projects .project-info .place-work p {
   display: flex;
   gap: 8px;
 }
-.projects .current-project .project-info .project-stats {
+.projects .project-info .project-stats {
   display: flex;
   gap: 48px;
   width: 252px;
 }
-.projects .current-project .project-info .project-stats h2 {
+.projects .project-info .project-stats h2 {
   margin-bottom: 8px;
 }
-.projects .current-project .project-info .project-stats p {
+.projects .project-info .project-stats p {
   font-size: 13px;
   color: #667085;
 }
-.projects .current-project .project-info .project-stats .projects-user-growth {
+.projects .project-info .project-stats .projects-user-growth {
   width: 80px;
 }
-.projects .current-project .project-info .project-stats .projects-active-users {
+.projects .project-info .project-stats .projects-active-users {
   width: 128px;
 }
-.projects .current-project .project-info .project-links {
+.projects .project-info .project-links {
   width: 300px;
   gap: 16px;
+}
+@media screen and (max-width: 1300px) {
+  .projects {
+    grid-template-columns: 600px 400px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .projects button {
+    grid-row: 3;
+    align-self: start;
+    justify-self: start;
+    margin-top: 32px;
+  }
+  .projects .project-info {
+    grid-column: 1;
+  }
+  .projects .i-teka-project {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: end;
+    margin-left: -200px;
+  }
+  .projects .i-teka-project img {
+    width: 368px;
+  }
+  .projects .all-projects-info {
+    width: 465px;
+  }
+  .projects .all-projects-info p {
+    font-size: 14px;
+  }
+  .projects .projects-list li {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 839px) {
+  .projects button {
+    margin-left: -150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .projects {
+    grid-template-columns: 400px;
+  }
+  .projects .all-projects-info {
+    width: 400px;
+    margin: 0;
+  }
+  .projects .all-projects-info p {
+    margin: 0;
+  }
+  .projects .projects-list {
+    margin-top: 32px;
+  }
+  .projects .projects-list .all-projects-list {
+    display: flex;
+    width: 390px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .projects .projects-list .all-projects-list li {
+    padding: 0;
+  }
+}
+.projects .project-info {
+  width: 400px;
+}
+.projects .i-teka-project {
+  grid-column: 1;
+  margin: 0;
+}
+.projects button {
+  width: 260px;
+  margin: 32px 0 0;
+  grid-row: 999;
+  grid-column: 1/2;
+  justify-self: center;
 }

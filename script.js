@@ -46,7 +46,7 @@ function init() {
                         ]
                     }
                 ]
-            },{
+            }, {
                 name: 'Фильтры',
                 hasChildren: true,
                 items: [
@@ -74,8 +74,7 @@ function init() {
 
     const items = new ListItems(document.getElementById('list-items'), data)
 
-
-  /*  items.render()*/
+    items.render()
     items.init()
 
     /*console.log(items.renderTest(data));*/
@@ -84,13 +83,14 @@ function init() {
         this.el = el;
         this.data = data;
 
+
         this.init = function () {
             const parents = this.el.querySelectorAll('[data-parent]')
 
             parents.forEach(parent => {
                 const open = parent.querySelector('[data-open]')
 
-                open.addEventListener('click', () => this.toggleItems(parent) )
+                open.addEventListener('click', () => this.toggleItems(parent))
             })
         }
 
@@ -103,22 +103,50 @@ function init() {
             //если hasChildren, то запускаем renderParent
             //если !hasChildren, то запускаем renderChildren
             //возвращает рендер родительского элемента
+            let childrenHTML = '';
 
+            data.items.forEach(child => {
+                if (child.hasChildren) {
+                    childrenHTML += this.renderParent(child);
+                } else {
+                    childrenHTML += this.renderChildren(child);
+                }
+            });
+
+            return `
+        <div class="list-item list-item_open" data-parent>
+            <div class="list-item__inner">
+                <img class="list-item__arrow" src="img/chevron-down.png" alt="chevron-down" data-open>
+                <img class="list-item__folder" src="img/folder.png" alt="folder">
+                <span>${data.name}</span>
+            </div>
+            <div class="list-item__items">
+                ${childrenHTML}
+            </div>
+        </div>
+    `;
         }
 
         this.renderChildren = function (data) {
-            //вовзращает рендер элемента без вложенности
+            return `
+        <div class="list-item children-item">
+            <div class="list-item__inner">
+                <img class="list-item__folder" src="img/folder.png" alt="folder">
+                <span>${data.name}</span>
+            </div>
+        </div>
+    `;
         }
 
         this.toggleItems = function (parent) {
             parent.classList.toggle('list-item_open')
         }
 
-/*        this.renderTest = function (data) {
-            return `
-            <div class="test">${data.name}</div>
-            `
-        }*/
+        /*        this.renderTest = function (data) {
+                    return `
+                    <div class="test">${data.name}</div>
+                    `
+                }*/
     }
 
 }
